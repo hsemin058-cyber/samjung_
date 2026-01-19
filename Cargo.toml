@@ -1,0 +1,9 @@
+[package]
+name = "my_project"  # 프로젝트 이름
+version = "0.1.0"     # 프로젝트 버전
+edition = "2018"      # 사용하는 Rust Edition
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }  # 데이터 직렬화를 위한 serde
+tokio = { version = "1", features = ["full"] }      # 비동기 라이브러리
+warp = "0.3"  # 웹 서버 라이브러리
